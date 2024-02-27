@@ -86,3 +86,5 @@ Route::resource('photos', PhotoController::class);
 Route::get('/greeting', function(){
     return view('hello',['name' =>'Jesica']);
 });
+Route::get('/greeting', [WelcomeController::class,
+'greeting']);
